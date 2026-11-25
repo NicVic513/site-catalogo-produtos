@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> DecorArt | Decoração com jeitinho</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="DecorEstetica.css">
+</head>
+<body>
+
+  <header>
+    <a href="#inicio" class="logo">DecorArt </a>
+
+    <button id="menu-botao" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+    <nav id="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+   
+    <section id="inicio" class="hero">
+      <h1>Sua casa com a sua cara</h1>
+      <p>Sala, cozinha, quadros e tudo que faz um cantinho virar o seu lugar favorito.</p>
+      <a href="#catalogo" class="botao botao-destaque">Ver catálogo</a>
+    </section>
+
+    <section id="catalogo">
+      <h2>Catálogo</h2>
+      <p>Escolha uma categoria e dê uma olhada no que temos por aqui.</p>
+
+      <nav class="filtros" aria-label="Filtrar produtos">
+        <button class="ativo" data-filtro="todos">Todos</button>
+        <button data-filtro="sala">Sala</button>
+        <button data-filtro="cozinha">Cozinha</button>
+        <button data-filtro="quarto">Quarto</button>
+        <button data-filtro="Banheiro">Banheiro</button>
+      </nav>
+
+     
+      <section class="produtos">
+
+        <article data-categoria="sala">
+          <figure><img src="imagens/almofada.webp" alt= "Almofada - Sala e sofá  " width="110px; height: auto;"></figure>
+          <h3> KIt almofadas 4 unidades </h3>
+          <p>Conforto, beleza e ultilidade pro seu lar</p>
+          <p class="preco">R$ 609,00</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+        <article data-categoria="sala">
+          <figure><img src="imagens/espelho.webp" alt= "Espelho - Elegância e sofisticação   " width="110px; height: auto;"></figure>
+          <h3> Espelho Orgânico com moldura </h3>
+          <p>Ideal para complementar seu ambiente </p>
+          <p class="preco">R$ 343,95 </p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+        <article data-categoria="sala">
+          <figure><img src="imagens/gatodeplanta.jpg" alt= "Vaso de Plantas - Gato  " width="110px; height: auto;"></figure>
+          <h3> Vaso de planta em formato de gato </h3>
+          <p> Um toque de fofura para sua decoração </p>
+          <p class="preco">R$ 210,95 </p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+        <article data-categoria="sala">
+          <figure><img src="imagens/Luminária.jpg" alt= "Luminária LED - Plafon " width="110px; height: auto;"></figure>
+          <h3> Luminária de chão </h3>
+          <p>Ilumine seus momentos com charme </p>
+          <p class="preco">R$ 114,99 </p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+        <article data-categoria="sala">
+          <figure><img src="imagens/tapete.webp" alt= "Tapete Peludo - MegaLuxo " width="110px; height: auto;"></figure>
+          <h3> Tapete  </h3>
+          <p> Adicione charme e sofisticação ao seu ambiente </p>
+          <p class="preco">R$ 186,99 </p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+        <article data-categoria="sala">
+          <figure><img src="imagens/quadro.jpeg" alt= "Quadro Decorativo - Pond " width="110px; height: auto;"></figure>
+          <h3> Quadro decorativo </h3>
+          <p> Dê vida às suas paredes</p>
+          <p class="preco">R$ 2.459,99 </p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+        <article data-categoria="cozinha">
+            
+          <figure><img src="https://i.pinimg.com/736x/44/98/48/449848043cd3b5b97c412e1a954cad48.jpg" alt="Temporizador - Disney:Ratatouille " width="110px; height: auto;"></figure>
+          <h3>Temporizador de Cozinha - Disney</h3>
+          <p>Para contabilizar o tempo das suas receitas.</p>
+          <p class="preco">R$ 169,00</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+        <article data-categoria="cozinha">
+
+          <figure><img src="https://i.pinimg.com/1200x/d7/b7/04/d7b704215acf96814ad76e6239f22162.jpg" alt=" Panelas - Le Creuset" width="110px; height: auto;"></figure>
+          <h3>Panelas - Le Creuset Verde Musgo</h3>
+          <p>Crie magia culinária com os utensílios de cozinha definitivos da Le Creuset. </p>
+          <p class="preco">R$ 3.599,95</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+         <article data-categoria="cozinha">
+
+          <figure><img src="https://i.pinimg.com/1200x/3f/72/95/3f7295b7af289d9a5237021c59265a5d.jpg" alt="Tabua de Corte Xadrez - Madeira" width="110px; height: auto;"></figure>
+          <h3>Panelas - Tabua de Corte Xadrez - Madeira</h3>
+          <p> Feitas de madeira maciça de grão final proveniente de florestas certificadas pelo FSC</p>
+          <p class="preco">R$ 299,00</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+         <article data-categoria="cozinha">
+
+          <figure><img src="https://m.media-amazon.com/images/I/71Gc6x39tML._AC_SX679_.jpg" alt=" KAWAHIRO Faca de chef japonesa" width="110px; height: auto;"></figure>
+          <h3>KAWAHIRO Faca de chef japonesa</h3>
+          <p>  Faca de cozinha profissional de 20 cm.</p>
+          <p class="preco">R$ 1.407,63</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+         <article data-categoria="cozinha">
+
+          <figure><img src="https://i.pinimg.com/736x/95/8b/73/958b73564f34862714f1f80639489aae.jpg" alt="Sino de Caranguejo Personalizado em Latão" width="110px; height: auto;"></figure>
+          <h3>Sino de Caranguejo Personalizado em Latão</h3>
+          <p> Sino decorativo de latão em formato de caranguejo.</p>
+          <p class="preco">R$ 273,02</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+         <article data-categoria="cozinha">
+
+          <figure><img src="https://i.pinimg.com/736x/be/a5/e9/bea5e932ca99fd260761f0e517e61de5.jpg" alt=" Copo de vidro europeu cristal tubarão" width="110px; height: auto;"></figure>
+          <h3>Copo de vidro europeu cristal tubarão</h3>
+          <p> Este copo de vinho tinto apresenta um estilo europeu sofisticado, ideal para festas e presentes especiais..</p>
+          <p class="preco">R$ 99,90</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+
+        <article data-categoria="quarto">
+          <figure><img src="imagens/cacto.jpg" alt="Cacto" width="110px; height: auto;"></figure>
+          <h3>Cacto</h3>
+          <p>Porta Itens em formato de Cacto.</p>
+          <p class="preco">R$ 169,00</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+         <article data-categoria="quarto">
+          <figure><img src="imagens/cama.jpg" alt="Cama" width="110px; height: auto;"></figure>
+          <h3>Cama</h3>
+          <p>Cama Casal Adulto Gades Yescasa Freijó.</p>
+          <p class="preco">R$ 1.800,00</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+        <article data-categoria="quarto">
+          <figure><img src="imagens/espelho.jpg" alt="Espelho" width="110px; height: auto;"></figure>
+          <h3>Espelho</h3>
+          <p>Espelho Orgânico FORM Grande Corpo Inteiro Lapidado.</p>
+          <p class="preco">R$ 499,99</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+         <article data-categoria="quarto">
+          <figure><img src="imagens/guardaRoupa.jpg" alt="Guarda-Roupa" width="110px; height: auto;"></figure>
+          <h3>Guarda-Roupa</h3>
+          <p>Guarda Roupa Casal Mônaco Madesa 3 Portas Correr.</p>
+          <p class="preco">R$ 3.000,00</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+         <article data-categoria="quarto">
+          <figure><img src="imagens/mesaDeCabeceira.jpg" alt="Mesa de Cabeceira" width="110px; height: auto;"></figure>
+          <h3>Mesa de Cabeceira</h3>
+          <p>Mesa De Cabeceira Retrô Em Madeira Maciça Moderna.</p>
+          <p class="preco">R$ 699,99</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+         <article data-categoria="quarto">
+          <figure><img src="imagens/prateleira.jpg" alt="Prateleira" width="110px; height: auto;"></figure>
+          <h3>Prateleira</h3>
+          <p>Nicho Prateleira De Canto Parede Sala Quarto.</p>
+          <p class="preco">R$ 359,99</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+        <article data-categoria="Banheiro">
+          <figure><img src="https://www.westwing.com.br/dw/image/v2/BMFR_PRD/on/demandware.static/-/Sites-westwing-m-catalog/default/dw3a647836/images/01tNp00000Kj2K6IAJ/01tNp00000Kj2K6IAJ_01.jpg?sw=700&q=75" alt="Tapete Peixe Azul" width="110px; height: auto;"></figure>
+          <h3>Tapete Peixe Azul</h3>
+          <p>80% Algodão / 20% Poliéster</p>
+          <p class="preco">R$ 154,90</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+        <article data-categoria="Banheiro">
+          <figure><img src="https://i.pinimg.com/736x/f2/8a/f3/f28af3b07a4a31d18e7e2ad5d65053c0.jpg" alt="Móvel de banheiro" width="110px; height: auto;"></figure>
+          <h3>Móvel de banheiro</h3>
+          <p>Móvel de banheiro individual com estrutura em fuso.</p>
+          <p class="preco">R$ 14.266,90</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+        <article data-categoria="Banheiro">
+          <figure><img src="https://i.pinimg.com/736x/51/20/d0/5120d0e66fcc16dab054065d139f2075.jpg" alt="Bomba de sabonete" width="110px; height: auto;"></figure>
+          <h3>Bomba de sabonete</h3>
+          <p>Bomba de sabonete metálica estampada Mckay.</p>
+          <p class="preco">R$ 129,99</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+        <article data-categoria="Banheiro">
+          <figure><img src="https://i.pinimg.com/1200x/6b/32/3d/6b323d1192b307145ef4ec2e7aeb7fbe.jpg" alt="Banheira Clássica" width="110px; height: auto;"></figure>
+          <h3>Banheira Clássica</h3>
+          <p>Banheira Clássica Immersi Antígua com Pés Cromados</p>
+          <p class="preco">R$ 12.902,00</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+        <article data-categoria="Banheiro">
+          <figure><img src="https://trussardi.vtexassets.com/arquivos/ids/192633/3206672_01.jpg?v=639231809077070000" alt="Toalha" width="110px; height: auto;"></figure>
+          <h3>Toalha</h3>
+          <p>Toalha Banhão 100% Algodão Doppia Boschi</p>
+          <p class="preco">R$ 206,91</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+
+        <article data-categoria="Banheiro">
+          <figure><img src="https://trussardi.vtexassets.com/arquivos/ids/192410/agua-perfumada-500ml.jpg?v=639180922387030000" alt="Água Perfumada" width="110px; height: auto;"></figure>
+          <h3>Água Perfumada 500ml Sicilia</h3>
+          <p>A Água Perfumada Sicília transforma a casa com o frescor solar típico do Mediterrâneo..</p>
+          <p class="preco">R$ 148,41</p>
+          <button class="favorito" aria-label="Favoritar produto">♡</button>
+        </article>
+        
+
+      </section>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <h2>Sobre a loja</h2>
+      <p>A DecorArt nasceu para ajudar você a montar um lar leve, sofisticado e sem complicação.</p>
+
+      <ul>
+        <li>
+          <h3>Peças escolhidas</h3>
+          <p>Cada item é selecionado pensando em material e acabamento.</p>
+        </li>
+        <li>
+          <h3>Entrega rápida</h3>
+          <p>Embalagem reforçada para tudo chegar inteirinho.</p>
+        </li>
+        <li>
+          <h3>Troca fácil</h3>
+          <p>Não combinou com a sala? Você tem 7 dias para trocar.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Fale com a gente</h2>
+      <p>Dúvidas, encomendas ou sugestões? Manda aqui.</p>
+
+      <form id="form-contato" novalidate>
+        <label>Nome
+          <input type="text" id="nome" placeholder="Seu nome">
+          <small></small>
+        </label>
+
+        <label>E-mail
+          <input type="email" id="email" placeholder="voce@email.com">
+          <small></small>
+        </label>
+
+        <label>Mensagem
+          <textarea id="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+          <small></small>
+        </label>
+
+        <button type="submit" class="botao">Enviar mensagem</button>
+        <p id="sucesso" hidden>Mensagem enviada! Já já a gente responde.</p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 DecorArt. Site de Decoração.</p>
+    <nav aria-label="Links do rodapé">
+      <a href="#inicio">Voltar ao topo</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </footer>
+
+  <script src="projeto.js"></script>
+</body>
+</html>

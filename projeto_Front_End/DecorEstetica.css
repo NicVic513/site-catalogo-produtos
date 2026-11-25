@@ -1,0 +1,441 @@
+
+
+:root {
+  --vinho: #7a1424;
+  --nogueira: #6b3a22;
+  --nogueira-escura: #43291d;
+  --acacia-clara: #d8b88a;
+  --oliva: #7a8420;
+  --oliva-escuro: #55601a;
+  --latao: #b8923e;
+  --madreperola: #ece6dd;
+  --prata: #c4c8cc;
+  --vidro: #f7f6f4;
+  --carvao: #25221f;
+}
+ 
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+ 
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--vidro);
+  color: var(--carvao);
+  line-height: 1.6;
+}
+ 
+h1, h2, h3, .logo {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+ 
+h2 {
+  font-size: 2rem;
+  color: var(--oliva-escuro);
+  margin-bottom: 0.5rem;
+}
+ 
+section {
+  padding: 4rem 5%;
+}
+ 
+[hidden] {
+  display: none !important;
+}
+ 
+
+.botao {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: var(--oliva);
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+ 
+.botao:hover {
+  background-color: var(--oliva-escuro);
+  transform: translateY(-3px);
+}
+ 
+.botao-destaque {
+  background-color: var(--latao);
+  color: var(--carvao);
+}
+ 
+.botao-destaque:hover {
+  background-color: var(--acacia-clara);
+}
+ 
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: var(--madreperola);
+  border-bottom: 2px solid var(--prata);
+}
+ 
+.logo {
+  font-size: 1.6rem;
+  color: var(--oliva-escuro);
+  text-decoration: none;
+}
+ 
+nav ul {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+ 
+nav a {
+  padding: 0.5rem 1rem;
+  color: var(--nogueira-escura);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+ 
+nav a:hover {
+  background-color: var(--acacia-clara);
+}
+ 
+#menu-botao {
+  display: none;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.6rem;
+  color: var(--oliva-escuro);
+  background: none;
+  border: 2px solid var(--oliva);
+  border-radius: 10px;
+  cursor: pointer;
+}
+ 
+
+.hero {
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.2rem;
+  color: white;
+  background-color: var(--oliva-escuro);
+  background-image:
+    linear-gradient(rgba(67, 41, 29, 0.5), rgba(67, 41, 29, 0.5)),
+    url("imagens/sala.jpg");
+  background-size: cover;
+  background-position: center;
+}
+ 
+.hero h1 {
+  max-width: 14ch;
+  font-size: 3.5rem;
+}
+ 
+.hero p {
+  max-width: 40ch;
+  font-size: 1.2rem;
+}
+ 
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.5rem 0 2rem;
+}
+ 
+.filtros button {
+  padding: 0.5rem 1.2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--nogueira-escura);
+  background-color: transparent;
+  border: 2px solid var(--prata);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+ 
+.filtros button:hover {
+  border-color: var(--oliva);
+}
+ 
+.filtros button.ativo {
+  background-color: var(--oliva);
+  border-color: var(--oliva);
+  color: white;
+}
+ 
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 0;
+}
+ 
+.produtos article {
+  position: relative;
+  padding: 1rem;
+  background-color: var(--madreperola);
+  border: 1px solid var(--prata);
+  border-radius: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+ 
+.produtos article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(67, 41, 29, 0.15);
+}
+ 
+.produtos figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  background-color: var(--acacia-clara);
+  border-radius: 14px;
+  overflow: hidden;
+}
+ 
+.produtos figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+.produtos h3 {
+  font-size: 1.2rem;
+  color: var(--nogueira-escura);
+}
+ 
+.produtos p {
+  font-size: 0.95rem;
+}
+ 
+.preco {
+  margin-top: 0.5rem;
+  font-size: 1.2rem !important;
+  font-weight: 700;
+  color: var(--nogueira);
+}
+ 
+.favorito {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1.4rem;
+  color: var(--vinho);
+  background-color: var(--vidro);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+ 
+.favorito:hover {
+  transform: scale(1.15);
+}
+ 
+
+.sobre {
+  background-color: var(--acacia-clara);
+}
+ 
+.sobre > p {
+  margin-bottom: 2rem;
+}
+ 
+.sobre ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  list-style: none;
+}
+ 
+.sobre li {
+  padding: 1.5rem;
+  background-color: var(--madreperola);
+  border-radius: 20px;
+}
+ 
+.sobre h3 {
+  margin-bottom: 0.4rem;
+  color: var(--nogueira-escura);
+}
+ 
+
+#contato {
+  max-width: 700px;
+  margin: 0 auto;
+}
+ 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+ 
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-weight: 700;
+}
+ 
+input,
+textarea {
+  padding: 0.8rem;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: white;
+  border: 2px solid var(--prata);
+  border-radius: 12px;
+}
+ 
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--oliva);
+}
+ 
+input.erro,
+textarea.erro {
+  border-color: var(--vinho);
+}
+ 
+small {
+  min-height: 1.2rem;
+  font-weight: 600;
+  color: var(--vinho);
+}
+ 
+form .botao {
+  align-self: flex-start;
+}
+ 
+#sucesso {
+  font-weight: 700;
+  color: var(--oliva-escuro);
+}
+ 
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 5%;
+  background-color: var(--carvao);
+  color: var(--madreperola);
+}
+ 
+footer nav {
+  display: flex;
+  gap: 1.5rem;
+}
+ 
+footer a {
+  color: var(--prata);
+  text-decoration: none;
+}
+ 
+footer a:hover {
+  color: var(--acacia-clara);
+}
+ 
+
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+ 
+  .produtos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+  .sobre ul {
+    grid-template-columns: 1fr;
+  }
+}
+ 
+
+@media (max-width: 600px) {
+  section {
+    padding: 3rem 5%;
+  }
+ 
+  h2 {
+    font-size: 1.7rem;
+  }
+ 
+
+  #menu-botao {
+    display: block;
+  }
+ 
+  nav#menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--madreperola);
+    border-bottom: 2px solid var(--prata);
+  }
+ 
+  nav#menu ul {
+    display: none;
+    flex-direction: column;
+    padding: 1rem 5%;
+  }
+ 
+  nav#menu.aberto ul {
+    display: flex;
+  }
+ 
+  .hero {
+    min-height: 65vh;
+  }
+ 
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+ 
+  .produtos {
+    grid-template-columns: 1fr;
+  }
+ 
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
